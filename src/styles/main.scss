@@ -22,3 +22,7 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
+textarea, input {
+  box-sizing: border-box;
+}

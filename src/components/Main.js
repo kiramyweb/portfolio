@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import images from "../images";
 import '../styles/mainPage.scss';
 
+import industrialLogo from "../img/industrialLogo.png";
+
 class MainPage extends Component {
     render() {
         return (
@@ -64,9 +66,17 @@ class MainPage extends Component {
                     <p>Here are some web sites that I've done.</p>
 
                     <div id="projects">
+
                         <div id="project1">
-                            <p>Project 1</p>
+                            <div className="projectPreview">
+                                <p><img src={industrialLogo}/></p>
+                            </div>
+                            <div className="projectHover">
+                                <p>Landing page for industrial company</p>
+                                <a href="/"><button>Visit Website &nbsp; &#10140;</button></a>
+                            </div>
                         </div>
+
                         <div id="project2">
                             <p>Project 2</p>
                         </div>

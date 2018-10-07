@@ -197,38 +197,109 @@
   #projects {
     margin-top: 84px;
     display: grid;
-    width: 100%;
+    width: 80%;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 300px;
     grid-auto-flow: dense;
 
     div {
       margin: 0 24px;
-      border: 2px solid black;
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    #project1 {
+      position: relative;
+      background: linear-gradient(
+                      rgba(0, 0, 0, 0.5),
+                      rgba(0, 0, 0, 0.5)), url("../img/project1.jpg") no-repeat center;
+      background-size: cover;
+      transition: all 0.5s;
+      color: white;
+
+
+      .projectPreview {
+        position: absolute;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+
+      .projectHover {
+        background-color: #293347;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+          border: 2px solid $main-color;
+          color: white;
+          background-color: transparent;
+          padding: 15px 30px;
+          border-radius: 50px;
+          font-weight: 500;
+          font-size: 20px;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: #8C43FF;
+          }
+        }
+
+        p {
+          width: 90%;
+          font-weight: 400;
+          font-size: 32px;
+        }
+
+        transition: all 0.5s;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      &:hover {
+        .projectPreview {
+          transform: scale(1.1);
+          opacity: 0;
+        }
+
+        .projectHover {
+          opacity: 1;
+        }
+      }
+    }
+
     @media(max-width: 1200px) {
       grid-gap: 10px;
-      grid-auto-rows: 200px;
+      grid-auto-rows: 400px;
+
       div {
         margin: 0 10px;
       }
     }
 
     @media (max-width: 700px) {
+      width: 95%;
       grid-gap: 0;
+
       div {
         margin: 10px 50px;
       }
     }
   }
-
-
 }
 
 #footer {

@@ -24,10 +24,7 @@ class Footer extends Component {
                 <div id="credits">
                     <h4>Credits:</h4>
                     <p>Icons made by monkik from <a target="_blank"
-                                                    href="http://www.flaticon.com">www.flaticon.com</a>
-                        | <a target="_blank" href="https://www.freepik.com/free-photos-vectors/business">Business
-                            vector in header
-                            created by Freepik</a></p>
+                                                    href="http://www.flaticon.com">www.flaticon.com</a> | <a target="_blank" href="https://www.freepik.com/free-photos-vectors/business">Vectors created by Freepik</a></p>
                 </div>
 
                 <ReactTooltip effect="solid" delayShow={300}/>
