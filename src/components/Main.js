@@ -48,7 +48,6 @@ class MainPage extends Component {
                             </div>
 
                             <p>NodeJS</p>
-
                             <div id="otherTools">
                                 <img src={images.toolkit} alt="My Toolkit"/>
                                 <ul>
@@ -75,13 +74,6 @@ class MainPage extends Component {
                                 <p>Landing page for industrial company</p>
                                 <a href="/"><button>Visit Website &nbsp; &#10140;</button></a>
                             </div>
-                        </div>
-
-                        <div id="project2">
-                            <p>Project 2</p>
-                        </div>
-                        <div id="project3">
-                            <p>Project 3</p>
                         </div>
                     </div>
                 </section>

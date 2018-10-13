@@ -17,6 +17,11 @@ class Footer extends Component {
                                 <i data-tip="Email me" className="far fa-envelope"/>
                             </li>
                         </a>
+                        <a id="gitHubIcon" href="https://github.com/kiramyweb" target="_blank">
+                            <li>
+                                <i data-tip="My GitHub" className="fab fa-github"/>
+                            </li>
+                        </a>
                     </ul>
                     <p>Made by me — kiramy</p>
                 </div>
