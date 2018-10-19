@@ -4,12 +4,14 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 144px;
+
 
     img {
       width: 72px;
@@ -292,11 +294,14 @@
     }
 
     @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
       width: 95%;
-      grid-gap: 0;
+      align-items: center;
+      justify-content: center;
 
       div {
-        margin: 10px 50px;
+        min-height: 300px;
       }
     }
   }

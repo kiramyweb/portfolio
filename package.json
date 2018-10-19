@@ -14,9 +14,9 @@
     "react-dom": "^16.5.2"
   },
   "repository": {
-  	"type" : "git",
-  	"url" : "https://github.com/kiramyweb/portfolio"
-	},
+    "type": "git",
+    "url": "https://github.com/kiramyweb/portfolio"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
