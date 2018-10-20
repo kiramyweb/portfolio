@@ -72,7 +72,7 @@ class MainPage extends Component {
                             </div>
                             <div className="projectHover">
                                 <p>Landing page for industrial company</p>
-                                <a href="/"><button>Visit Website &nbsp; &#10140;</button></a>
+                                <a href="/landing/index.html"><button>Visit Website &nbsp; &#10140;</button></a>
                             </div>
                         </div>
                     </div>
