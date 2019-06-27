@@ -50,26 +50,26 @@ class Contact extends Component {
 
                 <section id="form">
                     <h3>How can I help you today?</h3>
-                    <form action="/">
+                    <form action="./mail/index.php" method="POST">
                         <div id="inputs">
                             <div id="nameField">
                                 <p>Name:</p>
-                                <input value={this.state.name}
+                                <input required value={this.state.name}
                                        onChange={(e) => this.handleChangeField("name", e)}
                                        type="text" name="name"/>
                             </div>
                             <div id="emailField">
                                 <p>Email:</p>
-                                <input value={this.state.email}
+                                <input required value={this.state.email}
                                        onChange={(e) => this.handleChangeField("email", e)}
                                        type="email" name="email" />
                             </div>
                         </div>
                         <p id="messageHint">Message:</p>
-                        <textarea value={this.state.message}
+                        <textarea required value={this.state.message}
                                   onChange={(e) => this.handleChangeField("message", e)}
-                                  name="message" id="messageArea" cols="30" rows="10"/>
-                        <button type="submit">Submit</button>
+                                  name="msg" id="messageArea" cols="30" rows="10"/>
+                        <button type="submit" name="submit">Submit</button>
                     </form>
                 </section>
 

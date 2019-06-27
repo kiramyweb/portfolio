@@ -23,7 +23,7 @@ class App extends Component {
 
     render() {
         return (
-            <main id="App">
+            <main id="mainDiv">
                 {this.state.isMainPage ? <MainPage handleClick={this.onHandleContactClick}/> : <Contact handleClick={this.onHandleContactClick}/>}
                 <Footer/>
             </main>
