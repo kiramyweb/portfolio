@@ -5,8 +5,6 @@ import ReactTooltip from 'react-tooltip';
 
 class Contact extends Component {
 
-
-
     constructor(props) {
         super(props);
 
@@ -37,7 +35,6 @@ class Contact extends Component {
             <div id="contactForm">
                 <section id="headerContacts">
                     <img src={webProgramming}/>
-
                     <img src={meeting} id="meetingSvg"/>
 
                     <div id="headerButtons">
@@ -50,7 +47,7 @@ class Contact extends Component {
 
                 <section id="form">
                     <h3>How can I help you today?</h3>
-                    <form action="./mail/index.php" method="POST">
+                    <form action="https://formspree.io/xgeevjyz" method="POST">
                         <div id="inputs">
                             <div id="nameField">
                                 <p>Name:</p>
@@ -62,13 +59,13 @@ class Contact extends Component {
                                 <p>Email:</p>
                                 <input required value={this.state.email}
                                        onChange={(e) => this.handleChangeField("email", e)}
-                                       type="email" name="email" />
+                                       type="email" name="_replyto" />
                             </div>
                         </div>
                         <p id="messageHint">Message:</p>
                         <textarea required value={this.state.message}
                                   onChange={(e) => this.handleChangeField("message", e)}
-                                  name="msg" id="messageArea" cols="30" rows="10"/>
+                                  name="message" id="messageArea" cols="30" rows="10"/>
                         <button type="submit" name="submit">Submit</button>
                     </form>
                 </section>

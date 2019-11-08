@@ -23,7 +23,7 @@ class Footer extends Component {
                             </li>
                         </a>
                     </ul>
-                    <p>Made by me — kiramy</p>
+                    <p>Made by Manuhin 2019</p>
                 </div>
 
                 <div id="credits">

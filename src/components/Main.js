@@ -3,6 +3,7 @@ import images from "../images";
 import '../styles/mainPage.scss';
 
 import industrialLogo from "../img/industrialLogo.png";
+import todos from "../img/todos_bg.png";
 
 class MainPage extends Component {
     render() {
@@ -66,15 +67,26 @@ class MainPage extends Component {
 
                     <div id="projects">
 
-                        <div id="project1">
+                        <div className="project" id="project1">
                             <div className="projectPreview">
-                                <p><img src={industrialLogo}/></p>
+                                <p><img className="projectBG" src={industrialLogo}/></p>
                             </div>
                             <div className="projectHover">
                                 <p>Landing page for industrial company</p>
-                                <a href="/landing/index.html"><button>Visit Website &nbsp; &#10140;</button></a>
+                                <a href="landing/index.html"><button>Visit Website &nbsp; &#10140;</button></a>
                             </div>
                         </div>
+
+                        <div className="project" id="project2">
+                            <div className="projectPreview">
+                                <p>Todos App</p>
+                            </div>
+                            <div className="projectHover">
+                                <p>Simple todos app on React + Redux</p>
+                                <a href="todos/index.html"><button>Visit Website &nbsp; &#10140;</button></a>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </div>
